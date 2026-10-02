@@ -15,5 +15,14 @@
 void Print_Binary(uint8_t value_to_convert)
 {
     // Your Print_Binary function implementation goes here
-
+    printf("Binary: ");
+    for (int i = 7; i >= 0; i--)
+    {
+        printf("%d", (value_to_convert >> i) & 1);
+        if (i == 4)
+        {
+            printf("_");
+        }
+    }
+    printf("\n");
 }
